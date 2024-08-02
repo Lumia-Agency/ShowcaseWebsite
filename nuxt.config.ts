@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "shadcn-nuxt",
     "@nuxt/eslint",
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
   ],
   tailwindcss: {
     cssPath: ["assets/css/tailwind.css", { injectPosition: "first" }],
@@ -26,6 +26,11 @@ export default defineNuxtConfig({
         semi: true,
         quotes: "double",
       },
+    },
+  },
+  googleFonts: {
+    families: {
+      Poppins: true,
     },
   },
 });
