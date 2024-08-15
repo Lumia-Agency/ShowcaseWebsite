@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxt/eslint",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/i18n",
   ],
   tailwindcss: {
     cssPath: ["assets/css/tailwind.css", { injectPosition: "first" }],
