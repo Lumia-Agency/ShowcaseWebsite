@@ -2,15 +2,36 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": ">=21.6.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "nuxt": "^3.12.4",
+    "@nuxt/eslint": "^0.4.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^8.3.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.419.0",
+    "nuxt": "^3.12.3",
+    "radix-vue": "^1.9.2",
+    "shadcn-nuxt": "^0.10.4",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "typescript": "^5.5.4",
+    "vite-plugin-eslint2": "^4.4.0"
   }
 }
