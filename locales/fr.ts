@@ -13,6 +13,17 @@ export default {
     optional: "(opt.)",
     authorizedFormats: "Formats autorisés : %formats%",
     willBeRedirected: "Tu vas être automatiquement redirigé vers la page d’accueil.",
+    roles: {
+      designer: "Concepteur",
+      developer: "Développeur",
+      graphicDesigner: "Graphiste",
+      photograph: "Photographe",
+      helper: "Conseiller",
+      sysadmin: "Administrateur Système",
+    },
+  },
+  navigation: {
+    title: "Menu",
   },
   forms: {
     mandatoryFields: "Les champs marqués d’une * sont obligatoires !",
@@ -36,6 +47,7 @@ export default {
   },
   // PAGES
   home: {
+    navLink: "Accueil",
     hero: {
       title: "Illumine ton monde digital",
       caption: "Bienvenue chez Lumia, où la créativité rencontre l’innovation. Nous transformons vos idées en expériences digitales inoubliables. Explorez nos services et découvrez comment nous pouvons faire briller votre projet.",
