@@ -8,6 +8,7 @@ export default {
     back: "Back",
     nextStep: "Next Step",
     finalizeAndSend: "Finalize and Send",
+    seeMore: "See More",
   },
   generics: {
     optional: "(opt.)",
@@ -25,6 +26,10 @@ export default {
   navigation: {
     title: "Menu",
   },
+  projectTypes: {
+    internal: "Internal Project",
+    client: "Client Project",
+  },
   forms: {
     mandatoryFields: "Fields marked with an * are mandatory!",
   },
@@ -38,6 +43,7 @@ export default {
       },
       projects: {
         title: "Our Popular SaaS",
+        noForNow: "No SaaS to display for now.",
       },
     },
     legal: {
@@ -62,6 +68,7 @@ export default {
       title: "Meet Our Lights",
       caption: "At Lumia, our team is our greatest strength. Each of our experts brings a unique and brilliant touch to every project. From strategy to creation, through technology, we have gathered the best talents to illuminate your ideas. Discover the passionate faces behind our successes and see how our diversity and collaboration make each achievement shine.",
       cta: "Join Us",
+      cta2: "Discover Us",
     },
     testimonials: {
       title: "What Our Clients Say",

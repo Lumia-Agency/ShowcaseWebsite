@@ -8,6 +8,7 @@ export default {
     back: "Retour",
     nextStep: "Étape suivante",
     finalizeAndSend: "Finaliser et envoyer",
+    seeMore: "En savoir plus",
   },
   generics: {
     optional: "(opt.)",
@@ -25,6 +26,10 @@ export default {
   navigation: {
     title: "Menu",
   },
+  projectTypes: {
+    internal: "Projet Interne",
+    client: "Projet Client",
+  },
   forms: {
     mandatoryFields: "Les champs marqués d’une * sont obligatoires !",
   },
@@ -38,6 +43,7 @@ export default {
       },
       projects: {
         title: "Nos SaaS populaires",
+        noForNow: "Aucun SaaS à afficher pour l'instant.",
       },
     },
     legal: {
@@ -62,6 +68,7 @@ export default {
       title: "Rencontrez nos lumières",
       caption: "Chez Lumia, notre équipe est notre plus grande force. Chacun de nos experts apporte une touche unique et brillante à chaque projet. De la stratégie à la création, en passant par la technologie, nous avons réuni les meilleurs talents pour illuminer vos idées. Découvrez les visages passionnés derrière nos réussites et voyez comment notre diversité et notre collaboration font briller chaque réalisation.",
       cta: "Rejoins-nous",
+      cta2: "Découvre-nous",
     },
     testimonials: {
       title: "Ce que nos clients disent",
