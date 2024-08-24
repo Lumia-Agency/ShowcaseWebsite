@@ -1,17 +1,24 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
-import { useI18n } from "#imports";
+import { useI18n, useLocalePath } from "#imports";
 import type { TeamMember } from "~/types/team";
+import { cn } from "~/lib/utils";
 
-const { member } = defineProps<{
+const props = defineProps<{
+  class?: string;
   member: TeamMember;
 }>();
 const { t } = useI18n();
-const roles = member.roles.map((role: string) => t(`generics.roles.${role}`));
+const roles = props.member.roles.map((role: string) => t(`generics.roles.${role}`));
+const localePath = useLocalePath();
 </script>
 
 <template>
-  <Card class="overflow-hidden max-w-60 h-72 grid grid-rows-[40%_1fr] lg:grid-rows-[100%_0fr] lg:hover:grid-rows-[40%_1fr] transition-all duration-300 ease-in-out">
+  <Card :class="cn('relative isolate overflow-hidden h-72 grid grid-rows-[40%_1fr] lg:grid-rows-[100%_0fr] lg:hover:grid-rows-[40%_1fr] transition-all duration-300 ease-in-out', props.class)">
+    <NuxtLink
+      :to="localePath(`/team/${member.identifier}`)"
+      class="absolute inset-0 z-10"
+    />
     <CardHeader class="p-0">
       <NuxtImg
         v-if="member.pictureUrl"
@@ -33,6 +40,7 @@ const roles = member.roles.map((role: string) => t(`generics.roles.${role}`));
             v-for="(url, index) in member.socials"
             :key="`${member.identifier}-${index}`"
             :url="url"
+            class="z-20"
           />
         </div>
       </div>
