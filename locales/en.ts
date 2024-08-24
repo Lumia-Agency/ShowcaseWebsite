@@ -2,31 +2,48 @@ export default {
   // GLOBAL
   brand: {
     name: "Lumia",
-    slogan: "A group of motivated freelancers!",
+    slogan: "A gathering of motivated freelancers!",
   },
   buttons: {
     back: "Back",
-    nextStep: "Next step",
-    finalizeAndSend: "Finalize and send",
+    nextStep: "Next Step",
+    finalizeAndSend: "Finalize and Send",
+    seeMore: "See More",
   },
   generics: {
     optional: "(opt.)",
     authorizedFormats: "Authorized formats: %formats%",
     willBeRedirected: "You will be automatically redirected to the homepage.",
+    roles: {
+      designer: "Designer",
+      developer: "Developer",
+      graphicDesigner: "Graphic Designer",
+      photograph: "Photographer",
+      helper: "Advisor",
+      sysadmin: "System Administrator",
+    },
+  },
+  navigation: {
+    title: "Menu",
+  },
+  projectTypes: {
+    internal: "Internal Project",
+    client: "Client Project",
   },
   forms: {
-    mandatoryFields: "Fields marked with a * are mandatory!",
+    mandatoryFields: "Fields marked with an * are mandatory!",
   },
   footer: {
     links: {
       utils: {
-        title: "Useful links",
-        legalNotice: "Legal notice",
+        title: "Useful Links",
+        legalNotice: "Legal Notice",
         cgv: "Terms of Sale",
         cgu: "Terms of Use",
       },
       projects: {
-        title: "Our popular SaaS",
+        title: "Our Popular SaaS",
+        noForNow: "No SaaS to display for now.",
       },
     },
     legal: {
@@ -36,98 +53,100 @@ export default {
   },
   // PAGES
   home: {
+    navLink: "Home",
     hero: {
-      title: "Light up your digital world",
+      title: "Illuminate Your Digital World",
       caption: "Welcome to Lumia, where creativity meets innovation. We transform your ideas into unforgettable digital experiences. Explore our services and discover how we can make your project shine.",
-      cta: "Discover us",
+      cta: "Discover Us",
     },
     projects: {
-      title: "Our latest masterpieces",
-      caption: "Discover our recent projects, where innovation and creativity unite to bring custom digital solutions to life. Each creation reflects our commitment to pushing boundaries and crafting unique experiences. Dive into our portfolio and get inspired by our work.",
-      cta: "See more",
+      title: "Our Latest Wonders",
+      caption: "Discover our recent projects, where innovation and creativity come together to bring custom digital solutions to life. Each creation reflects our commitment to pushing boundaries and creating unique experiences. Dive into our portfolio and let yourself be inspired by our work.",
+      cta: "See More",
     },
     team: {
-      title: "Meet our stars",
-      caption: "At Lumia, our team is our greatest strength. Each of our experts brings a unique and brilliant touch to every project. From strategy to creation, and technology, we've gathered the best talents to illuminate your ideas. Discover the passionate faces behind our successes and see how our diversity and collaboration make every achievement shine.",
-      cta: "Join us",
+      title: "Meet Our Lights",
+      caption: "At Lumia, our team is our greatest strength. Each of our experts brings a unique and brilliant touch to every project. From strategy to creation, through technology, we have gathered the best talents to illuminate your ideas. Discover the passionate faces behind our successes and see how our diversity and collaboration make each achievement shine.",
+      cta: "Join Us",
+      cta2: "Discover Us",
     },
     testimonials: {
-      title: "What our clients say",
-      caption: "Our clients' satisfaction is our greatest reward. Discover testimonials from those who have experienced Lumia and see how our innovative solutions and dedication have transformed their projects. Their words reflect our commitment to delivering exceptional results and exceeding expectations. Get inspired by their stories and join our list of delighted clients.",
-      cta: "Read all",
+      title: "What Our Clients Say",
+      caption: "Our clients' satisfaction is our greatest reward. Discover the testimonials of those who have experienced Lumia and see how our innovative solutions and dedication have transformed their projects. Their words reflect our commitment to delivering exceptional results and exceeding expectations. Let yourself be inspired by their stories and join the list of our delighted clients.",
+      cta: "Read All",
     },
   },
   work: {
-    navLink: "Our work",
-    title: "Our brilliant projects",
-    caption: "At Lumia, every project is a bright adventure. We transform bold ideas into dazzling realities by putting all our creativity and expertise at the service of our clients. Discover our most remarkable achievements, where innovation meets perfection. From design to implementation, each project is proof of our passion and commitment to lighting up the digital world. Dive into our gallery and get inspired by our unique expertise and magical touch.",
+    navLink: "Our Work",
+    title: "Our Brilliant Projects",
+    caption: "At Lumia, every project is a luminous adventure. We turn bold ideas into dazzling realities, bringing all our creativity and expertise to serve our clients. Discover our most outstanding achievements, where innovation meets perfection. From design to implementation, each project is a testament to our passion and commitment to illuminating the digital world. Dive into our gallery and let yourself be inspired by our unique expertise and magical touch.",
     searchPlaceholder: "Search...",
     filterCTA: "Filter",
   },
   team: {
-    navLink: "Our team",
+    navLink: "Our Team",
     title: "The Awesome Team!",
-    caption: "At Lumia, we believe that seriousness can go hand in hand with fun. Discover a dynamic team, ready to tackle all challenges with a smile and competence.",
+    caption: "At Lumia, we believe that seriousness can go hand in hand with fun. Discover a dynamic team, ready to take on any challenge with a smile and skill.",
     joinUs: {
-      title: "Join the Passionate Crew!",
-      caption: "Do you dream of being part of a team that combines creativity, technology, and a touch of madness? At Lumia, we are always looking for talents who share our passion for innovation and excellence. Whether you're a coding genius, a design wizard, or a visionary marketing strategist, we want to hear from you! Send us your application and add your unique touch to our adventure. You might just be our next digital superhero!",
-      cta: "Apply today",
+      title: "Join the Band of Enthusiasts!",
+      caption: "Do you dream of being part of a team that combines creativity, technology, and a bit of craziness? At Lumia, we are always on the lookout for talents who share our passion for innovation and excellence. Whether you're a coding genius, a design wizard, or a visionary marketing strategist, we want to hear from you! Send us your application and come add your unique touch to our adventure. You might just be our next digital superhero!",
+      cta: "Apply Today",
     },
   },
   contact: {
-    navLink: "Contact us",
+    navLink: "Contact Us",
     joinTeam: {
-      navLink: "Join the team",
-      title: "Want to join our stars?",
-      caption: "Are you passionate about digital and have a talent that shines? Join our team of inspired creatives and visionary experts. Send us your application and light up our agency with your unique brilliance. We can't wait to meet you!",
+      navLink: "Join the Team",
+      title: "Want to Join Our Lights?",
+      caption: "Are you passionate about digital and have a talent that shines? Join our team of inspired creatives and visionary experts. Send us your application and illuminate our agency with your unique brilliance. We can't wait to meet you!",
       form: {
         submitted: {
           title: "THANK YOU!",
-          caption: "Application received and on its way to our experts! We'll get back to you within 72 hours, so stay tuned. We can't wait to discover you!",
+          caption: "Application received and on its way to our experts! We'll get back to you within 72 hours, so stay tuned. We're excited to discover you!",
         },
       },
       steps: {
         personalData: {
-          label: "Personal information",
+          label: "Personal Information",
           fields: {
             firstName: {
-              label: "First name",
+              label: "First Name",
               placeholder: "John",
             },
             lastName: {
-              label: "Last name",
+              label: "Last Name",
               placeholder: "DOE",
             },
             email: {
-              label: "Email address",
+              label: "Email Address",
               placeholder: "john.doe@example.com",
             },
             phone: {
-              label: "Phone number",
+              label: "Phone Number",
               placeholder: "01 23 45 67 89",
             },
           },
         },
         aboutYou: {
-          label: "About you",
+          label: "About You",
           fields: {
             describe: {
-              label: "Describe yourself in a few words",
-              placeholder: "Give your best to introduce your character (min 150 characters)",
+              label: "Describe Yourself in a Few Words",
+              placeholder: "Give your best to introduce your character (min 150 chars.)",
             },
           },
         },
         jobs: {
-          label: "Desired positions",
+          label: "Desired Position(s)",
           fields: {
             job: {
-              label: "Desired positions",
+              label: "Desired Position(s)",
               placeholder: "Select at least one position",
             },
           },
         },
         yourWork: {
-          label: "Your work",
+          label: "Your Work",
           fields: {
             website: {
               label: "Website",
@@ -168,71 +187,71 @@ export default {
           fields: {
             curriculum: {
               label: "Resume",
-              placeholder: "Attach your resume",
+              placeholder: "Attach your Resume",
             },
             motivation: {
-              label: "Cover letter",
-              placeholder: "Attach your cover letter",
+              label: "Cover Letter",
+              placeholder: "Attach your Cover Letter",
             },
           },
         },
       },
     },
     startAProject: {
-      navLink: "Start a project",
-      title: "Which project makes your ideas shine?",
-      caption: "Let's get started on turning your ideas into digital magic! Choose what excites you: a standout website, a sparkling marketing campaign, or an eye-catching design. We're ready to bring your projects to life. So, what are we creating together?",
+      navLink: "Start a Project",
+      title: "Which Project Makes Your Ideas Shine?",
+      caption: "Let’s turn your ideas into digital magic! Choose what excites you: a striking website, a sparkling marketing campaign, or a standout design. We are ready to bring your projects to life. So, what are we going to create together?",
       field: {
-        label: "Project type",
-        placeholder: "Select a type",
+        label: "Project Type",
+        placeholder: "Select a project type",
         values: {
           fullWeb: {
-            name: "Complete Website",
-            caption: "Design and development of a full website.",
+            name: "Full Website",
+            caption: "Design and development of a complete website.",
           },
           webDesign: {
             name: "Web Design",
-            caption: "Responsive and expectation-matching website design.",
+            caption: "Responsive website design that meets expectations.",
           },
           webDevelopment: {
             name: "Website Development",
-            caption: "Implementation of the mockup and website launch.",
+            caption: "Implementation of the mockup and launch of the website.",
           },
           photography: {
             name: "Photography",
-            caption: "Capture the best moments, advertising shoots, etc.",
+            caption: "Capture the best moments, advertising shoots, etc...",
           },
         },
       },
     },
     startAFullWebSite: {
-      title: "Create your IDEAL website ✨",
-      caption: "Tell us all about your dream project! From a standout design to flawless development, we want to know everything to create a website that reflects you. Fill in the details, and we'll handle turning your ideas into digital reality.",
+      title: "Create Your IDEAL Website ✨",
+      caption: "Tell us all about your dream project! From striking design to powerful development, we want to know everything to create a website that represents you. Fill in the details, and we’ll take care of turning your ideas into digital reality.",
       form: {
         submitted: {
           title: "THANK YOU!",
-          caption: "Project on its way to our web geniuses! They'll handle it brilliantly, and soon, your vision will take shape. Hang tight, it's going to shine!",
+          caption: "Project en route to our web geniuses! They will handle it brilliantly, and soon your vision will take shape. Hold on, it's going to shine!",
         },
       },
       steps: {
         aboutProject: {
-          label: "About your project",
+          label: "About Your Project",
           fields: {
             type: {
-              label: "Project type",
+              label: "Project Type",
               placeholder: "Select a project type",
               values: {
                 showcase: {
-                  name: "Showcase Site",
+                  name: "Showcase Website",
                   caption: "Useful for showcasing a project or product.",
                 },
                 eCommerce: {
-                  name: "E-commerce Site",
-                  caption: "Perfect for selling physical or virtual goods.",
+                  name: "E-commerce Website",
+                  caption: "Perfect for selling physical or digital goods.",
                 },
                 blogForum: {
                   name: "Blog / Forum",
-                  caption: "Solo or group discussion, best example: The Newsletter.",
+                  caption: "Solo or group discussions, the best example: The Newsletter.",
                 },
                 saas: {
                   name: "SaaS",
@@ -240,7 +259,7 @@ export default {
                 },
                 other: {
                   name: "Other",
-                  caption: "Any other type of project not covered by pre-configurations.",
+                  caption: "Any other type of projects not fitting into the pre-configurations.",
                 },
               },
             },
@@ -249,16 +268,16 @@ export default {
               placeholder: "Duolingo",
             },
             description: {
-              label: "Describe your project",
-              placeholder: "A project without hope is meaningless. Give it your all to present it in the best way possible (min 250 characters).",
+              label: "Describe Your Project",
+              placeholder: "A project doesn’t exist without hope. Give it your all to present it to us in the best way (min 250 chars.)",
             },
           },
         },
         aboutYou: {
-          label: "About you",
+          label: "About You",
           fields: {
             fullName: {
-              label: "Full name",
+              label: "Full Name",
               placeholder: "John DOE",
             },
             budget: {
@@ -266,11 +285,11 @@ export default {
               placeholder: "€250,000",
             },
             emailAddress: {
-              label: "Email address",
+              label: "Email Address",
               placeholder: "john.doe@example.com",
             },
             phoneNumber: {
-              label: "Phone number",
+              label: "Phone Number",
               placeholder: "01 23 45 67 89",
             },
           },
@@ -279,11 +298,11 @@ export default {
           label: "Documents",
           fields: {
             technicalSpecs: {
-              label: "Technical specifications",
+              label: "Technical Specifications",
               placeholder: "Choose a file",
             },
             functionalSpecs: {
-              label: "Functional specifications",
+              label: "Functional Specifications",
               placeholder: "Choose a file",
             },
           },
@@ -292,7 +311,7 @@ export default {
           label: "Conditions",
           field: {
             label: "I accept the Terms of Use",
-            caption: "By accepting the terms, you agree to abide by them and face sanctions in case of violation.",
+            caption: "By accepting the conditions, you agree to comply with them and face sanctions in case of breach.",
           },
         },
       },

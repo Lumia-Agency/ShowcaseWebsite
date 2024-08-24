@@ -14,6 +14,9 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      poppins: "Poppins, Helvetica, Arial, sans-serif",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -49,6 +52,15 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      width: {
+        wrapper: "min(100% - 3rem, 1400px)",
+        respWrapper: "min(100% - 6rem, 1400px)",
+        navWrapper: "min(100%, 1448px)",
+        respNavWrapper: "min(100% - 3rem, 1448px)",
+      },
+      boxShadow: {
+        header: "0 .75rem 1.5rem 0 var(--shadow)",
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",

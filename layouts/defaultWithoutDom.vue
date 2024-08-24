@@ -5,12 +5,9 @@ import { PageFooter } from "~/components/layout/footer";
 </script>
 
 <template>
-  <div
-    class="flex flex-col items-center"
-    data-layout="default"
-  >
+  <div data-layout="default">
+    <NavBar class="fixed top-0 left-1/2 -translate-x-1/2" />
     <ScreenSizeIndicator />
-    <NavBar class="sticky top-0 md:top-8" />
 
     <div class="mx-auto w-wrapper lg:w-respWrapper">
       <slot />

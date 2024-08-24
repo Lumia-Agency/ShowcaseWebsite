@@ -8,11 +8,27 @@ export default {
     back: "Retour",
     nextStep: "Étape suivante",
     finalizeAndSend: "Finaliser et envoyer",
+    seeMore: "En savoir plus",
   },
   generics: {
     optional: "(opt.)",
     authorizedFormats: "Formats autorisés : %formats%",
     willBeRedirected: "Tu vas être automatiquement redirigé vers la page d’accueil.",
+    roles: {
+      designer: "Concepteur",
+      developer: "Développeur",
+      graphicDesigner: "Graphiste",
+      photograph: "Photographe",
+      helper: "Conseiller",
+      sysadmin: "Administrateur Système",
+    },
+  },
+  navigation: {
+    title: "Menu",
+  },
+  projectTypes: {
+    internal: "Projet Interne",
+    client: "Projet Client",
   },
   forms: {
     mandatoryFields: "Les champs marqués d’une * sont obligatoires !",
@@ -27,6 +43,7 @@ export default {
       },
       projects: {
         title: "Nos SaaS populaires",
+        noForNow: "Aucun SaaS à afficher pour l'instant.",
       },
     },
     legal: {
@@ -36,6 +53,7 @@ export default {
   },
   // PAGES
   home: {
+    navLink: "Accueil",
     hero: {
       title: "Illumine ton monde digital",
       caption: "Bienvenue chez Lumia, où la créativité rencontre l’innovation. Nous transformons vos idées en expériences digitales inoubliables. Explorez nos services et découvrez comment nous pouvons faire briller votre projet.",
@@ -50,6 +68,7 @@ export default {
       title: "Rencontrez nos lumières",
       caption: "Chez Lumia, notre équipe est notre plus grande force. Chacun de nos experts apporte une touche unique et brillante à chaque projet. De la stratégie à la création, en passant par la technologie, nous avons réuni les meilleurs talents pour illuminer vos idées. Découvrez les visages passionnés derrière nos réussites et voyez comment notre diversité et notre collaboration font briller chaque réalisation.",
       cta: "Rejoins-nous",
+      cta2: "Découvre-nous",
     },
     testimonials: {
       title: "Ce que nos clients disent",
