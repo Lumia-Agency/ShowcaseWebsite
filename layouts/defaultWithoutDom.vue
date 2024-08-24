@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { NavBar } from "~/components/layout/navigation";
 import { ScreenSizeIndicator } from "~/components/dev";
+import { PageFooter } from "~/components/layout/footer";
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import { ScreenSizeIndicator } from "~/components/dev";
 
     <div class="mx-auto w-wrapper lg:w-respWrapper">
       <slot />
+      <PageFooter />
     </div>
   </div>
 </template>
