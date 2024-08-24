@@ -106,7 +106,7 @@ const localePath = useLocalePath();
         </Button>
       </header>
 
-      <div class="grid grid-rows-[min-content] gap-4 row-start-1 lg:gap-6 sm:grid-cols-4 lg:grid-cols-5 sm:col-span-4 lg:col-span-5">
+      <div class="grid grid-rows-[min-content] gap-4 md:row-start-1 lg:gap-6 sm:grid-cols-4 lg:grid-cols-5 sm:col-span-4 lg:col-span-5">
         <TestimonialSmallCard
           v-for="(testimonial, index) in testimonials"
           :key="`testimonial-${index}`"
