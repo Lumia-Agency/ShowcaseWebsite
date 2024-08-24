@@ -1,9 +1,22 @@
 <script setup lang="ts">
 import { Search, Filter } from "@iconoir/vue";
+import { computed, ref } from "vue";
 import { Input } from "~/components/ui/input";
 import { ProjectCard } from "~/components/projects";
 import projects from "~/assets/mocks/projects";
 import { ComingSoonElement } from "~/components/dev";
+import type { Project } from "~/types/project";
+
+const search = ref();
+const { t } = useI18n();
+const formatted = (entry: string): string => entry.toLowerCase().replaceAll(" ", "");
+const filteredProjects = computed((): Project[] => {
+  if (!search.value) return projects;
+  return projects.filter((project: Project) => {
+    if (formatted(project.name).includes(formatted(search.value))) return true;
+    return formatted(t(`projectTypes.${project.type}`)).includes(formatted(search.value));
+  });
+});
 </script>
 
 <template>
@@ -27,6 +40,7 @@ import { ComingSoonElement } from "~/components/dev";
       <header class="flex gap-3 items-center">
         <div class="flex-1 relative text-muted-foreground hover:text-foreground">
           <Input
+            v-model="search"
             :placeholder="$t('work.searchPlaceholder')"
             class="pl-10 text-foreground"
           />
@@ -48,7 +62,7 @@ import { ComingSoonElement } from "~/components/dev";
 
       <div class="flex flex-col gap-4 md:gap-6">
         <ProjectCard
-          v-for="project in projects"
+          v-for="project in filteredProjects"
           :key="project.id"
           :project="project"
         />
