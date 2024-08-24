@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-4 right-4 bg-muted text-muted-foreground rounded text-xs py-2 px-3 border border-border">
+  <div class="fixed z-50 bottom-4 right-4 bg-muted text-muted-foreground rounded text-xs py-2 px-3 border border-border">
     <p class="block sm:hidden">
       xs
     </p>
