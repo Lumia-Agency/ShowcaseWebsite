@@ -17,7 +17,7 @@ const localePath = useLocalePath();
 <template>
   <Card :class="cn('relative rounded-2xl isolate', props.class)">
     <NuxtLink
-      :to="localePath(`/projects/${project.id}`)"
+      :to="localePath(`/work/${project.id}`)"
       class="absolute inset-0 z-10"
     />
     <CardHeader>
