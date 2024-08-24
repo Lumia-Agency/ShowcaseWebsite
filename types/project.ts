@@ -6,4 +6,5 @@ export interface Project {
   type: ProjectType;
   caption: string;
   banner?: string;
+  links: string[];
 }

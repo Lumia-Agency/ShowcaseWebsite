@@ -7,6 +7,10 @@ export default [
     name: "Site vitrine",
     type: "internal",
     caption: "Lorem ipsum dolor sit amet consectetur. Sit porta maecenas id ultrices nunc lectus nam id. Massa feugiat dignissim pellentesque at arcu dui cras ornare. Sed lacus bibendum eget nec in donec ut. In rhoncus sodales et integer tortor.",
+    links: [
+      "https://lumia.coolify.dotslash.fr/",
+      "https://github.com/Lumia-Agency/ShowcaseWebSite",
+    ],
   },
   {
     id: "eventoria",
@@ -14,5 +18,8 @@ export default [
     name: "Eventoria",
     type: "internal",
     caption: "Lorem ipsum dolor sit amet consectetur. Sit porta maecenas id ultrices nunc lectus nam id. Massa feugiat dignissim pellentesque at arcu dui cras ornare. Sed lacus bibendum eget nec in donec ut. In rhoncus sodales et integer tortor.",
+    links: [
+      "https://github.com/Webster-FR/Eventoria-Front/",
+    ],
   },
 ] as Project[];
