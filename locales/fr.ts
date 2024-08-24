@@ -1,5 +1,8 @@
 export default {
   // GLOBAL
+  tooltip: {
+    comingSoon: "Arrive bientôt...",
+  },
   brand: {
     name: "Lumia",
     slogan: "Regroupement de freelances motivés !",
