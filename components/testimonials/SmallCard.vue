@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 import { StarSolid } from "@iconoir/vue";
-import { Card, CardHeader, CardContent } from "~/components/ui/card";
+import { Card, CardContent } from "~/components/ui/card";
 import type { Testimonial } from "~/types/testimonials";
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 
@@ -13,25 +13,27 @@ const props = defineProps<{
 
 <template>
   <Card :class="props.class">
-    <CardHeader class="flex-row items-center gap-3">
-      <Avatar
-        shape="square"
-        size="base"
-      >
-        <AvatarImage
-          v-if="testimonial.author.avatar"
-          :src="testimonial.author.avatar"
-        />
-        <AvatarFallback>{{ testimonial.author.fullName.split(' ').map((part: string) => part.substring(0, 1)).join('') }}</AvatarFallback>
-      </Avatar>
-      <div class="flex flex-col flex-1 overflow-hidden">
-        <p class="font-medium">
-          {{ testimonial.author.fullName }}
-        </p>
-        <span class="text-sm text-muted-foreground truncate">{{ testimonial.author.role }} · {{ testimonial.author.company }}</span>
+    <CardContent class="p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-3">
+        <Avatar
+          shape="square"
+          size="base"
+        >
+          <AvatarImage
+            v-if="testimonial.author.avatar"
+            :src="testimonial.author.avatar"
+          />
+          <AvatarFallback>{{ testimonial.author.fullName.split(' ').map((part: string) => part.substring(0, 1)).join('') }}</AvatarFallback>
+        </Avatar>
+        <div class="flex flex-col flex-1">
+          <p class="font-medium truncate">
+            {{ testimonial.author.fullName }}
+          </p>
+          <p class="text-sm text-muted-foreground line-clamp-1">
+            {{ testimonial.author.role }} · {{ testimonial.author.company }}
+          </p>
+        </div>
       </div>
-    </CardHeader>
-    <CardContent class="flex flex-col gap-4">
       <ul class="flex">
         <li
           v-for="i in testimonial.mark"
