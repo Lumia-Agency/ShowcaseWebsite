@@ -111,7 +111,7 @@ const localePath = useLocalePath();
           v-for="(testimonial, index) in testimonials"
           :key="`testimonial-${index}`"
           :testimonial="testimonial"
-          class="col-span-2"
+          class="sm:col-span-2"
         />
       </div>
     </section>
