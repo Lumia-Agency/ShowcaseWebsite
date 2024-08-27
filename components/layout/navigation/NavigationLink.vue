@@ -29,7 +29,7 @@ onMounted(() => {
 
 <template>
   <Button
-    :variant="isActive ? 'secondary' : 'link'"
+    :variant="isActive ? 'secondary' : 'ghost'"
     :class="props.class"
     as-child
   >

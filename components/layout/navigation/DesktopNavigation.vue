@@ -62,12 +62,8 @@ import { NavigationLink } from "~/components/layout/navigation";
   @apply justify-start h-fit w-full gap-3 pl-2
 
   > .icon
-    @apply aspect-square w-12 grid place-items-center rounded-lg
+    @apply aspect-square w-8 grid place-items-center rounded-lg
 
     > *
       @apply w-6 h-6
-
-  &.hover\:underline
-    > .icon
-      @apply bg-muted
 </style>
